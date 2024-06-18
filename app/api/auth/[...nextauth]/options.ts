@@ -5,7 +5,7 @@ const clientId = process.env.GITHUB_ID;
 const clientSecret = process.env.GITHUB_SECRET;
 
 if (!clientId || !clientSecret) {
-  throw Error("Missign clientId or clientSecret");
+  throw Error("Missing clientId or clientSecret");
 }
 
 export const authOptions: NextAuthOptions = {
